@@ -1,0 +1,3 @@
+{
+  "extends": ["local>descope/renovate-config"]
+}

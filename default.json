@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["local>descope/.github"],
+  "packageRules": [
+    {
+      "matchPackagePrefixes": ["@descope/"],
+      "followTag": "next",
+      "stabilityDays": 0
+    }
+  ]
+}

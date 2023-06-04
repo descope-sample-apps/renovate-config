@@ -1,0 +1,23 @@
+name: ci
+
+on: push
+
+env:
+  image_name: descope/renovate
+
+permissions:
+  contents: read
+  id-token: write
+  packages: write
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Validate
+        uses: rinchsan/renovate-config-validator@v0.0.12
+        with:
+          pattern: "*.json"
