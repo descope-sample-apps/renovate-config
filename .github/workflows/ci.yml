@@ -18,6 +18,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Validate
-        uses: rinchsan/renovate-config-validator@v0.0.12
+        uses: rinchsan/renovate-config-validator@v0.2.0
         with:
           pattern: "*.json"
